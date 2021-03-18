@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.2;
 
-interface IZeroRouter {
+interface IZeroRouter02 {
     function swapExactTokensForTokens(
         uint256 amountIn,
         uint256 amountOutMin,
@@ -80,7 +80,7 @@ interface IZeroRouter {
     ) external payable returns (uint256[] memory amounts);
 }
 
-interface IZeroPair {
+interface IZero02Pair {
     event Approval(
         address indexed owner,
         address indexed spender,
@@ -187,7 +187,7 @@ interface IZeroPair {
     function sync() external;
 }
 
-interface IZeroFactory {
+interface IZero02Factory {
     event PairCreated(
         address indexed token0,
         address indexed token1,
