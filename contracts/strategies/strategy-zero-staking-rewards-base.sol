@@ -50,4 +50,3 @@ abstract contract StrategyStakingRewardsBase is StrategyBase {
         return _amount;
     }
 }
-© 2021 GitHub, Inc.
