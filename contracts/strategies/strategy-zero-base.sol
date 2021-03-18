@@ -281,7 +281,7 @@ abstract contract StrategyBase {
             path[2] = _to;
         }
 
-        IZeroRouter(zeroRouter).swapExactTokensForTokens(
+        IZeroRouter02(zeroRouter).swapExactTokensForTokens(
             _amount,
             0,
             path,
@@ -296,7 +296,7 @@ abstract contract StrategyBase {
     ) internal {
         require(path[1] != address(0));
 
-        IZeroRouter(zeroRouter).swapExactTokensForTokens(
+        IZeroRouter02(zeroRouter).swapExactTokensForTokens(
             _amount,
             0,
             path,
