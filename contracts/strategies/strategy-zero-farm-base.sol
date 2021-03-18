@@ -88,7 +88,7 @@ abstract contract StrategyZeroFarmBase is StrategyStakingRewardsBase {
             IERC20(token1).safeApprove(zeroRouter, 0);
             IERC20(token1).safeApprove(zeroRouter, _token1);
 
-            IZeroRouter(zeroRouter).addLiquidity(
+            IZeroRouter02(zeroRouter).addLiquidity(
                 wavax,
                 token1,
                 _wavax,
