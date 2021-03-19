@@ -80,7 +80,7 @@ interface IZeroRouter02 {
     ) external payable returns (uint256[] memory amounts);
 }
 
-interface IZero02Pair {
+interface IUniswapV2Pair {
     event Approval(
         address indexed owner,
         address indexed spender,
@@ -187,7 +187,7 @@ interface IZero02Pair {
     function sync() external;
 }
 
-interface IZero02Factory {
+interface IUniswapV2Factory {
     event PairCreated(
         address indexed token0,
         address indexed token1,
