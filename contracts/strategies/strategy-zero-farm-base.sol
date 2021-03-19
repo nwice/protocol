@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.7;
 
-import "./strategy-staking-rewards-base.sol";
+import "./strategy-zero-staking-rewards-base.sol";
 
 abstract contract StrategyZeroFarmBase is StrategyStakingRewardsBase {
     // Token addresses
