@@ -29,11 +29,11 @@ interface IZeroRouter02 {
             uint256 liquidity
         );
 
-    function addLiquidityAVAX(
+    function addLiquidityETH(
         address token,
         uint256 amountTokenDesired,
         uint256 amountTokenMin,
-        uint256 amountAVAXMin,
+        uint256 amountETHMin,
         address to,
         uint256 deadline
     )
@@ -41,7 +41,7 @@ interface IZeroRouter02 {
         payable
         returns (
             uint256 amountToken,
-            uint256 amountAVAX,
+            uint256 amountETH,
             uint256 liquidity
         );
 
@@ -65,14 +65,14 @@ interface IZeroRouter02 {
         view
         returns (uint256[] memory amounts);
 
-    function swapAVAXForExactTokens(
+    function swapETHForExactTokens(
         uint256 amountOut,
         address[] calldata path,
         address to,
         uint256 deadline
     ) external payable returns (uint256[] memory amounts);
 
-    function swapExactAVAXForTokens(
+    function swapExactETHForTokens(
         uint256 amountOutMin,
         address[] calldata path,
         address to,
